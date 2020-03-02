@@ -5,8 +5,7 @@ node {
       stage ('build') {
            sh 'docker build -t test:latest .'
       }
-      {
-            stage ('build') {
+                  stage ('build') {
            sh 'docker run -i -t test:latest'
             }
       }
