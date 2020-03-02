@@ -6,6 +6,6 @@ node {
            sh 'docker build -t test:latest .'
       }
                   stage ('build') {
-           sh 'docker run -i -t test:latest /bin/bash'
+           sh 'docker run -d test:latest'
             }
       }
