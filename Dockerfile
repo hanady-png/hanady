@@ -1,6 +1,6 @@
 FROM openjdk:8
 RUN chmod 777 /opt/
-ADD  spring-petclinic-rest-2.2.4.jar /opt/
+ADD  masterpl.jar /opt/
 EXPOSE 8080 9966
 WORKDIR /opt
-ENTRYPOINT ["java","-jar", "spring-petclinic-rest-2.2.4.jar"]
+ENTRYPOINT ["java","-jar", "masterpl.jar"]
